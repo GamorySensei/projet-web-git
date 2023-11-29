@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card M Schmitt Arthur</title>
+
+    <!-- Boxicons CSS -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <style>
+        
+
+        @import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
+
+        * {
+            font-family: 'Ubuntu Mono', monospace;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            height: 100vh;                                          /*1vh = 1% du viewport, donc relatif à la taille de la fenêtre*/
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgb(216, 216, 216);
+        }
+        
+        .profile-card{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 370px;
+            width: 100%;
+            background: rgb(238, 238, 238);
+            border-radius: 24px;
+            padding: 25px;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .image{
+            position: relative;
+            height: 150px;
+            width: 150px;
+            border-radius: 50%;
+            background-color: rgb(224, 191, 0);
+            padding: 3px;
+            margin-bottom: 10px;
+        }
+
+        .profile-img {
+            height: 100%;
+            width: 100%;
+            border-radius: 50%;
+            border: 3px solid white;
+        }
+
+        .profile-card .text-data{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: #333;
+        }
+        .text-data .name{
+            font-size: 22px;
+            font-weight: 500;
+        }
+        .text-data .job{
+            font-size: 14px;
+            font-weight: 400;
+        }
+        .profile-card .links-buttons{
+            display: flex;
+            align-items: center;
+            margin-top: 15px;
+        }
+        .links-buttons .link{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 18px;
+            height: 34px;
+            width: 34px;
+            border-radius: 50%;
+            margin: 0 8px;
+            background-color: rgb(113, 113, 253);
+            text-decoration: none;
+        }
+
+        #button-GitHub{
+            background: #4078c0;
+        }
+        #button-Mail{
+            background: #8b001b;
+        }
+        #button-MNS{
+            background: orange;
+        }
+        #button-CV{
+            background: rgb(204, 0, 255);
+        }
+        #button-GitHub:hover{
+            background: #2e578c;
+        }
+        #button-Mail:hover{
+            background: #650014;
+        }
+        #button-MNS:hover{
+            background: rgb(190, 123, 0);
+        }
+        #button-CV:hover{
+            background: rgb(151, 0, 189);
+        }
+    </style>
+</head>
+<body>
+    <div class="profile-card">
+        <div class="image">
+            <img src="https://picsum.photos/id/1080/600/400" alt="Image de profil" class="profile-img">
+        </div>
+
+        <div class="text-data">
+            <span class="name">Schmitt Arthur</span>
+            <span class="job">Stagiaire de formation</span>
+        </div>
+
+        <div class="links-buttons">
+            <a href="https://github.com/SchArthur" title="Ouvrir le profil GitHub" class="link" id="button-GitHub">
+                <i class='bx bxl-github'></i>
+            </a>
+            <a href="mailto:arthur.9996@gmail.com" title="Contacter par e-mail" class="link" id="button-Mail">
+                <i class='bx bxl-gmail' ></i>
+            </a>
+            <a href="https://www.metz-numeric-school.fr/fr" title="Site web de l'école" class="link" id="button-MNS">
+                <i class='bx bxs-school' ></i>
+            </a>
+            <a href="https://www.lipsum.com/" class="link" title="Afficher le CV en ligne"id="button-CV">
+                CV
+            </a>
+        </div>
+    </div>
+</body>
+</html>
